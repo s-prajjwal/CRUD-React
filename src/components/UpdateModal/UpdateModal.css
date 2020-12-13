@@ -1,0 +1,39 @@
+.update_lead_form_wrapper {
+  height: 390px;
+  width: 620px;
+  border: 1px solid black;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  z-index: 1;
+  background-color: white;
+}
+
+.update_lead_form_heading {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+
+.update_lead_form {
+  padding: 20px;
+}
+
+.update_lead_form_input_label {
+  padding: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.form_control_textarea{
+  font-size: 18px;
+}
+
+.update_lead_form_footer > hr {
+  margin: 20px 0;
+  border-style: ridge;
+}
+
+.update_lead_form_footer{
+  text-align: right;
+}

@@ -1,0 +1,27 @@
+.add_lead_modal_btn {
+    background-color: #28a745!important;
+    color: white;
+    margin: 10px 10px 10px 0 !important;
+}
+.update_lead_modal_btn, .save_lead_modal_btn{
+    background-color: #007bff!important;
+    color: white;
+}
+.delete_lead_modal_btn{
+    background-color: #dc3545!important;
+    color: white;
+}
+.cancel_lead_modal_btn{
+    background-color: black!important;
+    color: white;
+}
+.primary_btn{
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border-style: none;
+    border-image: none;
+    background-color: white;
+    border-radius: 4px;
+}

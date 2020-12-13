@@ -1,0 +1,22 @@
+.delete_lead_form_wrapper {
+  height: 170px;
+  width: 400px;
+  border: 1px solid black;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  z-index: 1;
+  background-color: white;
+}
+
+.delete_lead_form_heading {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.delete_lead_form {
+  padding: 20px;
+  text-align: center;
+}

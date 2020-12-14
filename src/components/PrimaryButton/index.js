@@ -19,6 +19,9 @@ const PrimaryButton = ({ type, text, handleClick, disabled }) => {
     case "SAVE":
       className = "primary_btn add_lead_btn";
       break;
+    case "UPDATE_LEAD":
+      className = "primary_btn update_lead_btn";
+      break;
     case "DELETE_LEAD":
       className = "primary_btn delete_lead_btn";
       break;

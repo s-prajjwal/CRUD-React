@@ -5,6 +5,7 @@ export const ButtonType = {
     CANCEL: "CANCEL",
     CLOSE: "CLOSE",
     SAVE: "SAVE",
+    UPDATE_LEAD: "UPDATE_LEAD",
     DELETE_LEAD: "DELETE_LEAD"
 }
 

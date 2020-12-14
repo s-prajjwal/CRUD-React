@@ -22,7 +22,7 @@ const DeleteModal = ({ deleteLeadData, selectedId, modifyState }) => {
       </div>
       <div className="delete_lead_form">
         <PrimaryButton
-          type={ButtonType.DELETE}
+          type={ButtonType.DELETE_LEAD}
           text="Delete"
           handleClick={handleDelete}
         />

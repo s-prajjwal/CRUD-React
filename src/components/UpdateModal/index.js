@@ -41,7 +41,7 @@ const UpdateModal = ({ modifyState, selectedId, updateLeadData, leadData }) => {
             handleClick={closeUpdateModal}
           />
           <PrimaryButton
-            type={ButtonType.SAVE}
+            type={ButtonType.UPDATE_LEAD}
             text="Save"
             handleClick={updateCommunicationData}
           />

@@ -39,9 +39,9 @@ export const getLeadsList = () => {
       })
       .catch((err) => {
         console.log(err);
-        // window.alert(
-        //   "Unable to fetch data. Please check your network connection!"
-        // );
+        window.alert(
+          "Unable to fetch data. Please check your network connection!"
+        );
         // throw new Error(err);
       });
   };
@@ -66,13 +66,13 @@ export const createNewLead = (formData) => {
       .then((data) => {
         debugger;
         if (data.id) {
-          // window.alert("Lead data added successfully!!");
+          window.alert("Lead data added successfully!!");
           dispatch({
             type: ADD_NEW_LEAD,
             payload: data,
           });
         } else if(data.email[0]) {
-          // window.alert(data.email[0]);
+          window.alert(data.email[0]);
         }
       })
       .then(() => {
@@ -107,7 +107,7 @@ export const updateMarkCommunication = (formData, id) => {
       .then((response) => response.json())
       .then(({ status }) => {
         if (status === "Contacted") {
-          // window.alert("Lead's communication data updated successfully!!");
+          window.alert("Lead's communication data updated successfully!!");
           dispatch({
             type: UPDATE_COMMUNICATION_DATA,
             payload: { ...formData, id },
@@ -149,7 +149,7 @@ export const deleteLead = (id) => {
         });
       })
       .then(() => {
-        // window.alert("Lead deleted successfully!!");
+        window.alert("Lead deleted successfully!!");
         dispatch({
           type: STOP_LOADING,
           payload: {

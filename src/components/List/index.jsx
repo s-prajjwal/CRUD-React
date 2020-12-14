@@ -19,8 +19,8 @@ const List = ({ leadsDataList, getLeadsData, modifyState }) => {
           </tr>
         </thead>
         <tbody>
-          {leadsDataList && leadsDataList.map((lead) => {
-            return <ListItem lead={lead} modifyState={modifyState} />
+          {leadsDataList && leadsDataList.map((lead, index) => {
+            return <ListItem lead={lead} modifyState={modifyState} key={index}/>
           })}
         </tbody>
       </table>

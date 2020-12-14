@@ -5,8 +5,8 @@ import { ButtonType } from "../../utils/constants";
 import PrimaryButton from "../PrimaryButton";
 import "./UpdateModal.css";
 
-const UpdateModal = ({ modifyState, selectedId, updateLeadData }) => {
-  const [data, setData] = useState("");
+const UpdateModal = ({ modifyState, selectedId, updateLeadData, leadData }) => {
+  const [data, setData] = useState(leadData.communication || "");
   const handleChange = (event) => {
     setData(event.target.value);
   };
@@ -32,7 +32,7 @@ const UpdateModal = ({ modifyState, selectedId, updateLeadData }) => {
             rows="7"
             cols="50"
             onChange={handleChange}
-          />
+  >{data}</textarea>
         </div>
         <div className="update_lead_form_footer">
           <hr />
@@ -51,6 +51,12 @@ const UpdateModal = ({ modifyState, selectedId, updateLeadData }) => {
   );
 };
 
+const mapStateToProps = (state, ownProps) => {
+  return {
+    leadData: state.leadsReducer.leadsList.filter(lead => lead.id === ownProps.selectedId )[0]
+  }
+}
+
 const mapDispatchToProps = (dispatch) => {
   return {
     updateLeadData: (formData, id) => {
@@ -59,4 +65,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(UpdateModal);
+export default connect(mapStateToProps, mapDispatchToProps)(UpdateModal);

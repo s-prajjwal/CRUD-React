@@ -77,7 +77,7 @@ const AddModal = ({ addLeadInfo, modifyState }) => {
         <div className="add_lead_form_footer">
           <hr />
           <PrimaryButton
-            type={ButtonType.UPDATE}
+            type={ButtonType.SAVE}
             text="Save"
             handleClick={handleSave}
             disabled={!allowSubmit}

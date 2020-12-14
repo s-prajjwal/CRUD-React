@@ -3,7 +3,7 @@
     color: white;
     margin: 10px 10px 10px 0 !important;
 }
-.update_lead_modal_btn, .save_lead_modal_btn{
+.update_lead_modal_btn, .add_lead_btn{
     background-color: #007bff!important;
     color: white;
 }
